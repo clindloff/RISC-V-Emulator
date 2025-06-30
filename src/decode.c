@@ -568,7 +568,7 @@ instruction_t* decode(uint32_t inst_encoding) {
             }
             break;
         default:
-            printf("PANIC THIS WAS NOT SUPPOSED TO HAPPEN! AHHHHHHH!!!!\n");
+            printf("Error: Undefined opcode\n");
 
     }
 
