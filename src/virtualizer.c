@@ -13,7 +13,7 @@ extern uint64_t PC;
 int main(int argc, char* argv[], char* envp[]) {
     
     if(argc < 2) {
-        printf("You forgot to include the input file dumbass...\n");
+        printf("ERROR: No input file\n");
         return EXIT_FAILURE;
     }
 
@@ -21,7 +21,7 @@ int main(int argc, char* argv[], char* envp[]) {
 
     result = loader_init(argv[1], envp);
     if(result == EXIT_FAILURE) {
-        printf("Somehow something went wrong...\n");
+        printf("ERROR: Failed to initiate loader\n");
         return EXIT_FAILURE;
     }
 
